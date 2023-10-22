@@ -1,6 +1,9 @@
 .{
     .name = "tinyvg",
     .version = "0.0.1",
+    .paths = .{
+        "README.md",
+    },
     .dependencies = .{
         .args = .{
             .url = "https://github.com/MasterQ32/zig-args/archive/91d1e89fb89a4d01dec7c9aec95b0a324080ebcc.tar.gz",

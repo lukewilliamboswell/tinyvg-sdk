@@ -628,7 +628,7 @@ inline fn sqrt(val: anytype) @TypeOf(val) {
     return @sqrt(val);
 }
 inline fn abs(val: anytype) @TypeOf(val) {
-    return @fabs(val);
+    return @abs(val);
 }
 
 pub fn renderEllipse(
@@ -958,7 +958,7 @@ const Painter = struct {
 
         //-----------
 
-        q.x = @fabs(q.x);
+        q.x = @abs(q.x);
 
         const b = ra - rb;
         const c = tvg.point(@sqrt(h - b * b), b);
